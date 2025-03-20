@@ -3,16 +3,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#43C1CE"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Home Page Title -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:text="Home Fragment"
+        android:text="Home Page"
+        android:textAlignment="center"
         android:textIsSelectable="true"
-        android:textSize="55sp"
-        android:textStyle="bold|italic" />
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Email Input Field -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Email"
+        app:hintTextColor="#fff"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="password"
+        app:hintTextColor="#fff">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/black"
+        android:text="login"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="60dp"
+        app:cornerRadius="28sp"></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reg_btn"
+        android:layout_width="132dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:background="@color/black"
+        android:text="Reg"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_marginLeft="240dp"
+        app:cornerRadius="28sp"></com.google.android.material.button.MaterialButton>
 
 </FrameLayout>
